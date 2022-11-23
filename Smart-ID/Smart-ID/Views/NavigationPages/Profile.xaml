@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.NavigationPages.Profile"
              Title="Profile"
-             BackgroundColor="#0d1332"  >
+             BackgroundColor="#0d1332">
     
 </ContentPage>
