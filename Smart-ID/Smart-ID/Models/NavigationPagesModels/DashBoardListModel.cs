@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_ID.Models.NavigationPagesModels
 {
-    public class DashBoardListViewModel
+    public class DashBoardListModel
     {
         public string ImgUrl { get; set; }
         public string Name { get; set; }
