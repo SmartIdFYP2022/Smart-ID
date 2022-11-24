@@ -3,10 +3,315 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.RecordPages.LibraryPage"
              Title="LibraryPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            
+
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0"
+               BackgroundColor="DarkBlue"
+               Margin="-10,-30,-10,0"
+               CornerRadius="30">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0"
+                             Source="list.png"
+                             Margin="10,20,0,5"
+                             HorizontalOptions="Start"></ImageButton>
+                <ImageButton Grid.Column="1"
+                             Source="man.png"
+                             Margin="10,20,0,5"
+                             HorizontalOptions="End"></ImageButton>
+            </Grid>
+            
+        </Frame>
+        
+        
+        
+        <Label Grid.Row="1"
+               Text="Current Books"
+               Margin="10"
+               FontAttributes="Bold"
+               FontSize="Body"
+               ></Label>
+    
+        <Frame     Padding="5"
+                   Grid.Row="2"
+                   Margin="5,0,5,0">
+            <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <!--headings in current books   -->
+                <Frame Padding="2"
+                           Margin="5"
+                           BorderColor="Transparent">
+
+                    <Label 
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="NAME "
+                            FontSize="10"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+                </Frame>
+                <Frame 
+                           Margin="5"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                            BorderColor="Transparent"   
+                        Padding="2">
+
+                    <Label 
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="ISSU-DATE "
+                            FontSize="10"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+                </Frame>
+
+                <!--books names   -->
+
+                <Frame 
+                           Margin="3,0,4,0"
+                           Grid.Row="1"
+                           Grid.Column="0"  
+                           BorderColor="Transparent"
+                           Padding="2">
+
+                    <Label 
+                            Text="INTO TO C++ "
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            FontSize="Body"
+                            ></Label>
+                </Frame>
+                <Frame 
+                           Margin="3,0,4,0"
+                           Grid.Row="3"
+                           Grid.Column="0"  
+                           BorderColor="Transparent"
+                           Padding="2">
+
+                    <Label 
+                            Text="OOP and Data Structures "
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            FontSize="Body"
+                            ></Label>
+                </Frame>
+                <!--issu dates books    -->
+                <Frame Grid.Column="1"
+                           Grid.Row="1"
+                           Padding="2"
+                           BorderColor="Transparent">
+
+                    <Label 
+                           
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="1-nov-2022"
+                          ></Label>
+                </Frame>
+                <Frame Grid.Column="1"
+                           Grid.Row="2"
+                           Padding="2"
+                           BorderColor="Transparent">
+
+                    <Label 
+                           
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="24-nov-2022"
+                          ></Label>
+                </Frame>
+                <!--return  books button   -->
+                <Button Grid.Column="2"
+                            Grid.Row="1"
+                            Text="Return"
+                            TextColor="White"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center">
+
+                </Button>
+                <Button Grid.Column="2"
+                            Grid.Row="2"
+                            Text="Return"
+                            TextColor="White"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center">
+
+                </Button>
+            </Grid>
+            </ScrollView>
+        </Frame>
+        <Label Grid.Row="3"
+               Text="History"
+               Margin="10"
+               FontAttributes="Bold"
+               FontSize="Body"
+               ></Label>
+        <Frame     Padding="5"
+                   Grid.Row="4"
+                   Margin="5,0,5,0">
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!--headings in history   -->
+                    <Label Grid.Row="0"
+                           Margin="5"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           Text="NAME "
+                            FontSize="20"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+
+                    <!--headings DATE HEADING   -->
+                    <Grid Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+                        </Grid.ColumnDefinitions>
+                        <Label 
+                               Grid.Column="0"
+                           Padding="10"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           Text="ISSU DATE: "
+                            FontSize="10"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+                        <Label 
+                               Grid.Column="1"
+                           Padding="10"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           Text="RETURN DATE: "
+                            FontSize="10"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+                    </Grid>
+
+
+                    <!--headings NAME DATA   -->
+
+
+                    <Frame 
+                           Margin="3,0,4,0"
+                           Grid.Row="1"
+                           BackgroundColor="DarkBlue"
+                           Padding="2">
+
+                        <Label 
+                            Text="INTO TO C++ "
+
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            TextColor="White"
+                            FontSize="Body"
+                            FontAttributes="Bold"
+                            ></Label>
+                    </Frame>
+                    <!--headings DATE DATA   -->
+                    <Grid Grid.Row="3">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+                        </Grid.ColumnDefinitions>
+                        <Label 
+                               Grid.Column="0"
+                           Padding="10"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           Text="1-NOV-2022 "
+                            FontSize="10"
+                            FontAttributes="Bold"
+                            ></Label>
+                        <Label 
+                               Grid.Column="1"
+                           Padding="10"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           Text="7-NOV-2022 "
+                            FontSize="10"
+                            FontAttributes="Bold"
+                            ></Label>
+                    </Grid>
+
+                    <!--headings fine DATA   -->
+
+                    <Label Grid.Row="4" 
+                            Text="Fine:"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            FontSize="Body"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+
+                    <Label Grid.Row="5" 
+                            Text="0.00"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                           Margin="0,10,0,10"
+                            FontSize="Body"
+                            TextDecorations="Underline"
+                            FontAttributes="Bold"
+                            ></Label>
+                   
+                </Grid>
+            </ScrollView>
+        </Frame>
+        <Frame
+            Padding="10"
+            BorderColor="Transparent"
+            Grid.Row="5">
+            <Button Text="Pay fine ">
+                
+            </Button>
+        </Frame>
+
+
+    </Grid>
+
+
 </ContentPage>
