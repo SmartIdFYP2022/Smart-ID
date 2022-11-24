@@ -4,5 +4,94 @@
              x:Class="Smart_ID.Views.NavigationPages.Profile"
              Title="Profile"
              BackgroundColor="#0d1332">
-    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ImageButton Source="list.png"
+                         Grid.Row="0"
+                         BackgroundColor="Transparent"
+                         BorderColor="Transparent"
+                        VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Start"
+                         Margin="20"
+                         ></ImageButton>
+
+        <Grid Grid.Row="1"
+                  
+                  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="65"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <!--space left for forfile icon and text  -->
+
+        </Grid>
+
+        <!--profile page view items   -->
+        <ScrollView Grid.Row="2">
+            <Frame 
+                   CornerRadius="20"
+                 >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="10"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=" 180"></RowDefinition>
+                        <RowDefinition Height=" 10"></RowDefinition>
+                        <RowDefinition Height=" 180"></RowDefinition>
+                        <RowDefinition Height=" 10"></RowDefinition>
+                        <RowDefinition Height=" 180"></RowDefinition>
+                        <RowDefinition Height=" 10"></RowDefinition>
+                        <RowDefinition Height=" 180"></RowDefinition>
+                        <RowDefinition Height=" 10"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Frame Grid.Column="0"
+                           Grid.Row="0"
+                          
+                           >
+
+                    </Frame>
+                    <Frame Grid.Column="2"
+                           Grid.Row="0">
+
+                    </Frame>
+                    <Frame Grid.Column="0"
+                           Grid.Row="2"
+                           ></Frame>
+                    <Frame Grid.Column="2"
+                           Grid.Row="2">
+
+                    </Frame>
+                    <Frame Grid.Column="0"
+                           Grid.Row="4"
+                           ></Frame>
+                    <Frame Grid.Column="2"
+                           Grid.Row="4">
+
+                    </Frame>
+                    <Frame Grid.Column="0"
+                           Grid.Row="6"
+                           ></Frame>
+                    <Frame Grid.Column="2"
+                           Grid.Row="6">
+
+                    </Frame>
+
+                </Grid>
+
+
+            </Frame>
+        </ScrollView>
+    </Grid>
+
 </ContentPage>

@@ -6,7 +6,8 @@
     xmlns:local="clr-namespace:Smart_ID"
     xmlns:views="clr-namespace:Smart_ID.Views.NavigationPages"
     Shell.NavBarIsVisible="false"
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="#0d1332">
 
     <TabBar>
         <Tab Title="Dashboard">

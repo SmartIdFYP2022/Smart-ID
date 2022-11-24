@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.NavigationPages.DashBoard"
              Title="DashBoard"
-             xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels">
+             xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels"
+             BackgroundColor="#0d1332">
     <ContentPage.BindingContext>
 
         <vm:DashBoardViewModel />
@@ -44,7 +45,7 @@
             <!--history user frame -->
             <Frame Grid.Row="1" 
                    Padding="10"
-                   BackgroundColor="Black" 
+                   BackgroundColor="#0d1332" 
                    BorderColor="Transparent"
                    Opacity="0.1"
                    CornerRadius="20"
@@ -64,12 +65,12 @@
 
             <!--history user frame -->
             <Frame Grid.Row="2" 
-                   BackgroundColor="White"
+                   BackgroundColor="#0d1332"
                    Padding="15,3"
                    BorderColor="Transparent"
                    CornerRadius="20"
                    Margin="2">
-                <Label Text="Filter"></Label>
+                <Label Text="Filter" TextColor="White"></Label>
             </Frame>
 
             <!--DataGrid-->
@@ -78,6 +79,7 @@
                    BackgroundColor="White" 
                    BorderColor="Transparent"
                    CornerRadius="20"
+                   Opacity="0.1"
                    Margin="2">
             </Frame>
 
