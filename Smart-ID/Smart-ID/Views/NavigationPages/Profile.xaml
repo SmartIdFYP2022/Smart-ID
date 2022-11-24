@@ -35,9 +35,8 @@
 
         <!--profile page view items   -->
         <ScrollView Grid.Row="2">
-            <Frame 
-                   CornerRadius="20"
-                 >
+            <Frame CornerRadius="20"
+                 Opacity="0.6">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
