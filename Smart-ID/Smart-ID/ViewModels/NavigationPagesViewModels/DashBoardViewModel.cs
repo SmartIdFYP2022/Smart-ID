@@ -11,18 +11,18 @@ namespace Smart_ID.ViewModels.NavigationPagesViewModels
 
         public DashBoardViewModel()
         {
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "menu_icon.svg", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
+            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
         }
         //public ICommand FlayoutButton { get; set; }
         //public async void CanExecuteFlayoutAsync(object obj)

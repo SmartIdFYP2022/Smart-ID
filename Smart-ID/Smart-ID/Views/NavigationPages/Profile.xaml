@@ -15,28 +15,35 @@
                          Grid.Row="0"
                          BackgroundColor="Transparent"
                          BorderColor="Transparent"
-                        VerticalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand"
                          HorizontalOptions="Start"
                          Margin="20"
                          ></ImageButton>
 
-        <Grid Grid.Row="1"
-                  
-                  >
+        <Grid Grid.Row="1" Padding="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30"></ColumnDefinition>
-                <ColumnDefinition Width="65"></ColumnDefinition>
-
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <!--space left for forfile icon and text  -->
-
+            <Frame 
+                BackgroundColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="-50,0,0,-60"
+                CornerRadius="30"
+                BorderColor="Transparent"
+                >
+                <Label Text="Profile" VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand" Margin="20,0,0,0"
+                       FontSize="Large" FontAttributes="Bold"/>
+            </Frame>
         </Grid>
 
         <!--profile page view items   -->
         <ScrollView Grid.Row="2">
-            <Frame CornerRadius="20"
-                 Opacity="0.6">
+            <Frame BorderColor="Transparent" CornerRadius="0">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -52,43 +59,32 @@
                         <RowDefinition Height=" 10"></RowDefinition>
                         <RowDefinition Height=" 180"></RowDefinition>
                         <RowDefinition Height=" 10"></RowDefinition>
-
                     </Grid.RowDefinitions>
                     <Frame Grid.Column="0"
-                           Grid.Row="0"
-                          
-                           >
-
+                           Grid.Row="0">
                     </Frame>
                     <Frame Grid.Column="2"
                            Grid.Row="0">
-
                     </Frame>
                     <Frame Grid.Column="0"
                            Grid.Row="2"
-                           ></Frame>
+                    ></Frame>
                     <Frame Grid.Column="2"
                            Grid.Row="2">
-
                     </Frame>
                     <Frame Grid.Column="0"
-                           Grid.Row="4"
-                           ></Frame>
+                           Grid.Row="4">
+                    </Frame>
                     <Frame Grid.Column="2"
                            Grid.Row="4">
-
                     </Frame>
                     <Frame Grid.Column="0"
-                           Grid.Row="6"
-                           ></Frame>
+                           Grid.Row="6">
+                    </Frame>
                     <Frame Grid.Column="2"
                            Grid.Row="6">
-
                     </Frame>
-
                 </Grid>
-
-
             </Frame>
         </ScrollView>
     </Grid>

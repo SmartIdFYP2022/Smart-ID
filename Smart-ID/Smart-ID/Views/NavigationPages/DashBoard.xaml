@@ -4,85 +4,120 @@
              x:Class="Smart_ID.Views.NavigationPages.DashBoard"
              Title="DashBoard"
              xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels"
-             BackgroundColor="#0d1332">
+             BackgroundColor="#f7f7f7">
     <ContentPage.BindingContext>
 
         <vm:DashBoardViewModel />
     </ContentPage.BindingContext>
 
-    <ScrollView>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition Height="3*"></RowDefinition>
-            </Grid.RowDefinitions>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-
-            <!--top user profile frame -->
-
-            <Frame 
-                Grid.Row="0"
-                BackgroundColor="White"
-                Opacity="0.6"
-                VerticalOptions="FillAndExpand"
-                HorizontalOptions="FillAndExpand"
-                Margin="-20,-25,-80,20"
-                CornerRadius="70"
-                BorderColor="Transparent"
-                >
-            </Frame>
-            <Frame 
-                Grid.Row="0"
-                BackgroundColor="White"
-                Opacity="0.6"
-                Margin="0,135,0,5"
-                BorderColor="Transparent"
-                >
-            </Frame>
-
-            <!--history user frame -->
-            <Frame Grid.Row="1" 
-                   Padding="10"
-                   BackgroundColor="#0d1332" 
+        <Frame Grid.Row="0"
+                   BackgroundColor="#0d1332"
                    BorderColor="Transparent"
-                   Opacity="0.1"
-                   CornerRadius="20"
-                   Margin="2"
-                   >
-                <Grid>
+                   CornerRadius="500"
+                   Margin="-50,-100,-50,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Frame Grid.Column="0" BackgroundColor="White" Margin="1,0" CornerRadius="20"/>
-                    <Frame Grid.Column="1" BackgroundColor="White" Margin="1,0" CornerRadius="20"/>
-                    <Frame Grid.Column="2" BackgroundColor="White" Margin="1,0" CornerRadius="20"/>
+                    <ImageButton Source="list.png"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         BorderColor="Transparent"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Start"
+                         Margin="45"
+                         ></ImageButton>
+                    <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" x:Name="WelcomeLbl">
+                        <Label.FormattedText>
+                            <FormattedString >
+                                <Span Text="Welcome back" TextColor="#a9c6df" FontSize="Medium"/>
+                                <Span Text=", Naveed! " TextColor="#f7f7f7" FontSize="Medium"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <ImageButton  Source="man.png" HeightRequest="28" WidthRequest="28" Grid.Column="2"/>
                 </Grid>
-            </Frame>
-
-            <!--history user frame -->
-            <Frame Grid.Row="2" 
-                   BackgroundColor="#0d1332"
-                   Padding="15,3"
-                   BorderColor="Transparent"
-                   CornerRadius="20"
-                   Margin="2">
-                <Label Text="Filter" TextColor="White"></Label>
-            </Frame>
-
-            <!--DataGrid-->
-            <Frame Grid.Row="3" 
-                   Padding="5"
-                   BackgroundColor="White" 
-                   BorderColor="Transparent"
-                   CornerRadius="20"
-                   Opacity="0.1"
-                   Margin="2">
-            </Frame>
-
+            </Grid>
+        </Frame>
+        <Grid Grid.Row="0" Margin="0,100,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" x:Name="Browse">
+                <Label.FormattedText>
+                    <FormattedString >
+                        <Span Text="Browse" TextColor="#a9c6df" FontSize="30"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="#a9c6df" Margin="5,15" CornerRadius="20" 
+                       HeightRequest="150"/>
+            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#a9c6df" Margin="5,15" CornerRadius="20" 
+                       HeightRequest="150"/>
+            <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#a9c6df" Margin="5,15" CornerRadius="20" 
+                       HeightRequest="150"/>
         </Grid>
-    </ScrollView>
+        <!--DataGrid-->
+        <Frame Grid.Row="1" 
+                   Padding="0"
+                   BackgroundColor="Transparent" 
+                   BorderColor="Transparent"
+                   CornerRadius="20"
+                   Margin="2">
+            <ScrollView >
+                <CollectionView x:Name="listView" 
+                   ItemsSource="{Binding DashBoardLists}"
+                            VerticalScrollBarVisibility="Default" Margin="2,0" >
+
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate>
+                            <Frame HeightRequest="89"  Background="White" BorderColor="Transparent" CornerRadius="20" Margin="0,2">
+                                <Grid Padding="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="4*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding ImgUrl }" Grid.Column="0" VerticalOptions="Center"/>
+                                    <Grid Grid.Column="1" Padding="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Text="{Binding Name}" TextColor="#323447" FontSize="Medium" FontAttributes="Bold" Grid.Row="0" VerticalOptions="Center" Margin="10,0,0,0"/>
+                                        <Label Text="{Binding MemorySpace }" TextColor="#7e7f8b" FontSize="Small" Grid.Row="1" VerticalOptions="Start" Margin="10,0,0,0"/>
+
+                                    </Grid>
+
+                                    <Image Source="{Binding IconUrl}" Grid.Column="2" VerticalOptions="Center"/>
+                                </Grid>
+
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </ScrollView>
+        </Frame>
+    </Grid>
 </ContentPage>
