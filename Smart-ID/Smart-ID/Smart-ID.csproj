@@ -49,6 +49,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\help.png" />
+	  <None Remove="Resources\Images\list.png" />
+	  <None Remove="Resources\Images\logout.png" />
+	  <None Remove="Resources\Images\man.png" />
+	  <None Remove="Resources\Images\pinlock.png" />
+	  <None Remove="Resources\Images\previous.png" />
+	  <None Remove="Resources\Images\privecy.png" />
+	  <None Remove="Resources\Images\profile.png" />
+	  <None Remove="Resources\Images\sprofileimage.png" />
+	  <None Remove="Resources\Images\user.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\LoginPages\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
