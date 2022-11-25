@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\logo.png" ForegroundFile="Resources\AppIcon\logo.png" Color="Transparent" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Images\splashscreenlogo.png" Color="White" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -51,18 +51,23 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\help.png" />
 	  <None Remove="Resources\Images\list.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\logout.png" />
 	  <None Remove="Resources\Images\man.png" />
 	  <None Remove="Resources\Images\pinlock.png" />
 	  <None Remove="Resources\Images\previous.png" />
 	  <None Remove="Resources\Images\privecy.png" />
 	  <None Remove="Resources\Images\profile.png" />
+	  <None Remove="Resources\Images\splashscreenlogo.png" />
 	  <None Remove="Resources\Images\sprofileimage.png" />
 	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\LoginPages\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoginPages\LoginEntryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\NavigationPages\DashBoard.xaml">
