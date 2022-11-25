@@ -49,7 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\application.png" />
 	  <None Remove="Resources\Images\cardbackground.jpg" />
+	  <None Remove="Resources\Images\financial-profit.png" />
 	  <None Remove="Resources\Images\help.png" />
 	  <None Remove="Resources\Images\incomming.png" />
 	  <None Remove="Resources\Images\list.png" />
