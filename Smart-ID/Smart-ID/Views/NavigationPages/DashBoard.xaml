@@ -6,7 +6,6 @@
              xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels"
              BackgroundColor="#f7f7f7">
     <ContentPage.BindingContext>
-
         <vm:DashBoardViewModel />
     </ContentPage.BindingContext>
     <Grid>
