@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.NavigationPages.DashBoard"
              Title="DashBoard"
+              NavigationPage.HasNavigationBar="False"
              xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels"
              BackgroundColor="#f7f7f7">
     <ContentPage.BindingContext>
@@ -166,7 +167,67 @@
                 </Frame>
             </Grid>
         </Frame>
-       
+        <Frame Grid.Row="3"
+               Padding="10"
+               BorderColor="Transparent"
+               Margin="10,10,10,30">
+            <ScrollView >
+               
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton
+                        Margin="5,0,10,0"
+                    Grid.Column="0"
+                    Source="qr.png" 
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ></ImageButton>
+                    <ImageButton
+                        
+                        Margin="5,0,10,0"
+                    Grid.Column="1"
+                    Source="walet.png" 
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ></ImageButton>
+                    <ImageButton
+                        
+                        Margin="5,0,10,0"
+                    Grid.Column="2"
+                    Source="mobilebanking.png" 
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ></ImageButton>
+                    <ImageButton
+                    Grid.Column="3"
+                        
+                        Margin="5,0,10,0"
+                    Source="application.png" 
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ></ImageButton>
+                    <ImageButton
+                    Grid.Column="4"
+                        
+                        Margin="5,0,10,0"
+                    Source="help.png" 
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         ></ImageButton>
+                </Grid>
+            </ScrollView>
+        </Frame>
     </Grid>
     
 </ContentPage>

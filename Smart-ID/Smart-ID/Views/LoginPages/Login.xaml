@@ -10,7 +10,7 @@
         <vm:LoginViewModel />
     </ContentPage.BindingContext>
 
-    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   BackgroundColor="#0d1332" Opacity="0.9"  Padding="0" >
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   BackgroundColor="DarkBlue" Opacity="0.9"  Padding="0" >
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>

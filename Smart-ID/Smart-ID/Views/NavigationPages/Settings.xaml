@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.NavigationPages.Settings"
              Title="Settings"
+              NavigationPage.HasNavigationBar="False"
              BackgroundColor="White">
     <Grid>
         <Grid.RowDefinitions>
@@ -32,8 +33,8 @@
                 </Grid.ColumnDefinitions>
                 <ImageButton 
                          Grid.Column="0"
-                         Source="previous.png"
-                         Margin="5,0,0,0"
+                         Source="list.png"
+                         Margin="10"
                          VerticalOptions="CenterAndExpand"
                          HorizontalOptions="Start"></ImageButton>
                 <Label
