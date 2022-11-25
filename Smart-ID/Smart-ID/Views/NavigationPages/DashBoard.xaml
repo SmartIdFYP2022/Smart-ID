@@ -25,17 +25,17 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="60"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
 
                 </Grid.ColumnDefinitions>
                 <ImageButton Grid.Column="0"
-                             Source="man.png"
-                             Margin="20,0,0,0"
+                             Source="list.png"
+                             Margin="30,-33,0,0"
                              HorizontalOptions="Start"
                              ></ImageButton>
                 <ImageButton Grid.Column="2"
-                             Source="settings.png"
-                             Margin="0,0,-70,0"
+                             Source="man.png"
+                             Margin="0,-33,20,0"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              
@@ -46,7 +46,7 @@
         <Frame Grid.Row="1"
                Padding="10"
                CornerRadius="15"
-               Margin="30,-60,30,20"
+               Margin="30,-60,30,40"
                BackgroundColor="#0B0605"
                BorderColor="Transparent">
 
