@@ -3,7 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.LoginPages.LoginEntryPage"
              Title="LoginEntryPage"
-             BackgroundColor="#0d1332"
+             BackgroundColor="#f7f7f7"
+             NavigationPage.HasNavigationBar="False"
              >
-    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label BackgroundColor="Yellow" Grid.Row="0"/>
+        <Label BackgroundColor="Orange" Grid.Row="1"/>
+        <Label BackgroundColor="Red" Grid.Row="2"/>
+        
+    </Grid>
 </ContentPage>

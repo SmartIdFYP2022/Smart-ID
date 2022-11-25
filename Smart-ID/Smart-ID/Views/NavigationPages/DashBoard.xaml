@@ -33,6 +33,15 @@
                              Margin="30,-33,0,0"
                              HorizontalOptions="Start"
                              ></ImageButton>
+                <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" x:Name="WelcomeLbl">
+                    <Label.FormattedText>
+                        <FormattedString >
+                            <Span Text="Welcome back" TextColor="#a9c6df" FontSize="Title" />
+                            <Span Text=",Arip! " TextColor="#f7f7f7" FontSize="Title"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
                 <ImageButton Grid.Column="2"
                              Source="man.png"
                              Margin="0,-33,20,0"
