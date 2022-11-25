@@ -383,7 +383,7 @@
 
     <Style TargetType="TabBar">
         <Setter Property="Shell.TabBarBackgroundColor"
-            Value="#0d1332" />
+            Value="Transparent" />
         <Setter Property="Shell.TabBarUnselectedColor"
             Value="AntiqueWhite" />
     </Style>
