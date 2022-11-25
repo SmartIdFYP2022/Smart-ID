@@ -20,7 +20,7 @@ namespace Smart_ID.ViewModels.RecordPagesViewModels
         //Functions
         public async void Dashboard(object sender)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new DashBoard(), true);
+            await Application.Current.MainPage.Navigation.PushAsync(new AppShell(), true);
         }
     }
 }

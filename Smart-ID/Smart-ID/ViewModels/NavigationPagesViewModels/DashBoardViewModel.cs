@@ -32,11 +32,11 @@ namespace Smart_ID.ViewModels.NavigationPagesViewModels
         }
         public async void settingPage(object sender)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new Settings(), true);
+            await Application.Current.MainPage.Navigation.PushAsync(new AppShell(), true);
         }
         public async void ProfilePage(object sender)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new Profile(), true);
+            await Application.Current.MainPage.Navigation.PushAsync(new AppShell(), true);
         }
     }
 }

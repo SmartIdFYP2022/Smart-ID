@@ -51,9 +51,11 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\application.png" />
 	  <None Remove="Resources\Images\cardbackground.jpg" />
+	  <None Remove="Resources\Images\decrease.png" />
 	  <None Remove="Resources\Images\financial-profit.png" />
 	  <None Remove="Resources\Images\help.png" />
 	  <None Remove="Resources\Images\incomming.png" />
+	  <None Remove="Resources\Images\increase.png" />
 	  <None Remove="Resources\Images\list.png" />
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\logout.png" />
