@@ -2,9 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.NavigationPages.Settings"
+              xmlns:vm="clr-namespace:Smart_ID.ViewModels.NavigationPagesViewModels"
+            
              Title="Settings"
               NavigationPage.HasNavigationBar="False"
              BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:SettingsViewModel />
+    </ContentPage.BindingContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"></RowDefinition>
@@ -165,6 +171,7 @@
                     Grid.Column="0" 
                     Grid.Row="4"
                     Source="logout.png" 
+                         Command="{Binding btnLogin}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     
@@ -221,6 +228,7 @@
                         TextColor="Black"
                         BackgroundColor="Transparent"
                         HorizontalOptions="Start"
+                         Command="{Binding btnLogin}"
                         >
 
                 </Button>

@@ -32,7 +32,7 @@
                              Source="list.png"
                              Margin="30,-33,0,0"
                              HorizontalOptions="Start"
-                             ></ImageButton>
+                            Command="{Binding btnSettings}" ></ImageButton>
                 <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" x:Name="WelcomeLbl">
                     <Label.FormattedText>
                         <FormattedString >
@@ -45,9 +45,10 @@
                 <ImageButton Grid.Column="2"
                              Source="man.png"
                              Margin="0,-33,20,0"
+                              
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             
+                             Command="{Binding btnProfile}"
                              ></ImageButton>
             </Grid>
         </Frame>
@@ -96,19 +97,23 @@
 
 
                         </Grid.ColumnDefinitions>
-                        <Image 
+                        <ImageButton 
                             Grid.Column="0"
                             Source="incomming.png"
                             VerticalOptions="CenterAndExpand"
                             HorizontalOptions="CenterAndExpand"
-                               ></Image>
+                            
+                        Command="{Binding TransactionPageButton}"   
+                            ></ImageButton>
 
-                        <Image 
+                        <ImageButton 
                             Grid.Column="2"
                              VerticalOptions="CenterAndExpand"
                             HorizontalOptions="CenterAndExpand"
                             Source="outgoing.png"
-                               ></Image>
+                            
+                        Command="{Binding TransactionPageButton}"   
+                            ></ImageButton>
                         <Frame Grid.Column="1"
                                BackgroundColor="Transparent"
                                BorderColor="Transparent">
@@ -197,6 +202,7 @@
                          BackgroundColor="Transparent"
                          HorizontalOptions="Center"
                          VerticalOptions="Center"
+                        Command="{Binding TransactionPageButton}"
                          ></ImageButton>
                     <ImageButton
                         

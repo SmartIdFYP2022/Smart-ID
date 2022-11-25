@@ -1,4 +1,8 @@
 ﻿using Smart_ID.Models.NavigationPagesModels;
+using Smart_ID.ViewModels.RecordPagesViewModels;
+using Smart_ID.Views.LoginPages;
+using Smart_ID.Views.NavigationPages;
+using Smart_ID.Views.RecordPages;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
@@ -6,29 +10,33 @@ namespace Smart_ID.ViewModels.NavigationPagesViewModels
 {
     public class DashBoardViewModel
     {
-        ObservableCollection<DashBoardListModel> dataList = new ObservableCollection<DashBoardListModel>();
-        public ObservableCollection<DashBoardListModel> DashBoardLists { get { return dataList; } }
-
+   
         public DashBoardViewModel()
         {
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "File skripshit", MemorySpace = 50, Items = 32, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Exploration.png", MemorySpace = 4, IconUrl = "three_dots_icon.png" });
-            dataList.Add(new DashBoardListModel { ImgUrl = "man.png", Name = "Brief website.pdf ", MemorySpace = 2, Items = 32, IconUrl = "three_dots_icon.png" });
-        }
-        //public ICommand FlayoutButton { get; set; }
-        //public async void CanExecuteFlayoutAsync(object obj)
-        //{
-        //    //await Application.Current.MainPage.Navigation.PushAsync(new FlyoutMenuPage());
 
-        //}
+            TransactionPageButton = new Command(TransactionPage);
+            btnSettings = new Command(settingPage);
+            btnProfile = new Command(ProfilePage);
+
+        }
+            
+        //ICommands
+        public ICommand TransactionPageButton { get; set; }
+        public ICommand btnSettings { get; set; }
+        public ICommand btnProfile { get; set; }
+
+        //Functions
+        public async void TransactionPage(object sender)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new TransactionsPage(), true);
+        }
+        public async void settingPage(object sender)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new Settings(), true);
+        }
+        public async void ProfilePage(object sender)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new Profile(), true);
+        }
     }
 }
