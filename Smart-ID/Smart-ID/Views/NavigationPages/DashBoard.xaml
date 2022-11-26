@@ -221,6 +221,8 @@
                          BackgroundColor="Transparent"
                          HorizontalOptions="Center"
                          VerticalOptions="Center"
+                        
+                            Command="{Binding btnLibrary}"
                          ></ImageButton>
                     <ImageButton
                     Grid.Column="4"

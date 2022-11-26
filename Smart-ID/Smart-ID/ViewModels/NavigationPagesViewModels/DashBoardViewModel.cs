@@ -17,6 +17,7 @@ namespace Smart_ID.ViewModels.NavigationPagesViewModels
             TransactionPageButton = new Command(TransactionPage);
             btnSettings = new Command(settingPage);
             btnProfile = new Command(ProfilePage);
+            btnLibrary = new Command(LibraryPage);
 
         }
             
@@ -24,11 +25,16 @@ namespace Smart_ID.ViewModels.NavigationPagesViewModels
         public ICommand TransactionPageButton { get; set; }
         public ICommand btnSettings { get; set; }
         public ICommand btnProfile { get; set; }
+        public ICommand btnLibrary { get; set; }
 
         //Functions
         public async void TransactionPage(object sender)
         {
             await Application.Current.MainPage.Navigation.PushAsync(new TransactionsPage(), true);
+        }
+        public async void LibraryPage(object sender)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new LibraryPage(), true);
         }
         public async void settingPage(object sender)
         {

@@ -2,7 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Smart_ID.Views.RecordPages.LibraryPage"
-             Title="LibraryPage">
+             Title="LibraryPage"
+             xmlns:vm="clr-namespace:Smart_ID.ViewModels.RecordPagesViewModels"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <vm:LibraryPageViewModel />
+    </ContentPage.BindingContext>
+
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
@@ -305,8 +312,9 @@
             Padding="10"
             BorderColor="Transparent"
             Grid.Row="5">
-            <Button Text="Pay fine ">
-                
+            <Button Text="Pay fine "
+                    
+                Command="{Binding btnDashboard}">
             </Button>
         </Frame>
 
