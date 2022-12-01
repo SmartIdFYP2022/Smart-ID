@@ -10,7 +10,7 @@
         <vm:LoginViewModel />
     </ContentPage.BindingContext>
 
-    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   BackgroundColor="DarkBlue" Opacity="0.9"  Padding="0" >
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   BackgroundColor="White" Opacity="0.9"  Padding="0" >
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
@@ -29,7 +29,7 @@
                     <Entry Placeholder="Password" PlaceholderColor="White" Margin="0"   VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
                 </Frame>
 
-                <Button Text="LOG IN" TextColor="#0d1332" BackgroundColor="#a9c6df"
+                <Button Text="LOG IN" TextColor="#0d1332" BackgroundColor="HotPink"
                             HeightRequest="45" Margin="30,20,30,0" CornerRadius="50" FontAttributes="Bold"
                             Command="{Binding btnDashboard}"/>
             </StackLayout>
@@ -41,8 +41,10 @@
                 <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Terms &amp; Conditions" Grid.Column="0" VerticalOptions="StartAndExpand" TextColor="#a9c6df"/>
-            <Label Text="Privacy" TextColor="White" Grid.Column="2" VerticalOptions="StartAndExpand"/>
+            <Label Text="Terms &amp; Conditions" Grid.Column="0" 
+                   FontAttributes="Bold" VerticalOptions="StartAndExpand" TextColor="black"/>
+            <Label Text="Privacy" TextColor="Black" 
+                   FontAttributes="Bold" Grid.Column="2" VerticalOptions="StartAndExpand"/>
         </Grid>
 
 

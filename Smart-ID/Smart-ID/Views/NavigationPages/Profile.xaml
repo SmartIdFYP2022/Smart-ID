@@ -5,7 +5,7 @@
              Title="Profile"
               NavigationPage.HasNavigationBar="False"
 
-             BackgroundColor="#0d1332">
+             BackgroundColor="DeepSkyBlue">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>

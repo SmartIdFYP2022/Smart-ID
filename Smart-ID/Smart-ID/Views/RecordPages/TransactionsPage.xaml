@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:Smart_ID.ViewModels.RecordPagesViewModels"
              x:Class="Smart_ID.Views.RecordPages.TransactionsPage"
-             Title="TransactionsPage" BackgroundColor="DarkBlue"
+             Title="TransactionsPage" BackgroundColor="#5a4d85"
              
               NavigationPage.HasNavigationBar="False">
     <ContentPage.BindingContext>
@@ -15,17 +15,18 @@
             <RowDefinition Height="50"></RowDefinition>
 
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
 
         </Grid.RowDefinitions>
-        <ImageButton Source="list.png"
-                         Grid.Row="0"
-                         BackgroundColor="Transparent"
+
+        <ImageButton 
+            BackgroundColor="Transparent"
                          BorderColor="Transparent"
                          VerticalOptions="CenterAndExpand"
                          HorizontalOptions="Start"
-                         Margin="20"
-                         ></ImageButton>
+                         Margin="20" Grid.Row="0"  
+                                Source="previous.png" 
+                                Command="{Binding btnDashboard}"/>
         <Frame 
                Padding="10"
                CornerRadius="50"
@@ -304,10 +305,7 @@
 
         </Frame>
          
-            <Button 
-                Grid.Row="4"   Text="LOG IN" TextColor="#0d1332" BackgroundColor="#a9c6df"
-                                HeightRequest="45" Margin="30,20,30,0" CornerRadius="50" FontAttributes="Bold"
-                                Command="{Binding btnDashboard}"/>
+            
        
     </Grid>
 </ContentPage>

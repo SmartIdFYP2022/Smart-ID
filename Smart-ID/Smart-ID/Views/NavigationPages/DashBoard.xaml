@@ -17,7 +17,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Frame Grid.Row="0"
-               BackgroundColor="DarkBlue"
+               BackgroundColor="#5a4d85"
                CornerRadius="100"
                Margin="-30,-90,-30,0"
                >
@@ -36,8 +36,8 @@
                 <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" x:Name="WelcomeLbl">
                     <Label.FormattedText>
                         <FormattedString >
-                            <Span Text="Welcome back" TextColor="#a9c6df" FontSize="Title" />
-                            <Span Text=",Arip! " TextColor="#f7f7f7" FontSize="Title"/>
+                            <Span Text="Welcome back" TextColor="LightPink" FontSize="Title" />
+                            <Span Text=",Umair! " TextColor="#f7f7f7" FontSize="Title"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -57,7 +57,7 @@
                Padding="10"
                CornerRadius="15"
                Margin="30,-60,30,40"
-               BackgroundColor="#0B0605"
+               BackgroundColor="Black"
                BorderColor="Transparent">
 
             <Grid>

@@ -60,7 +60,7 @@
         <Frame
             Grid.Row="2"
             Grid.Column="1"
-            BackgroundColor="DarkBlue"
+            BackgroundColor="DeepSkyBlue"
             CornerRadius="30"
             Margin="20,0,20,0">
 
@@ -101,7 +101,7 @@
 
                         <Label Grid.Row="1"
                                Text="BCSM-F19-190"
-                               TextColor="Gray"
+                               TextColor="Black"
                                TextDecorations="Underline"
                                FontSize="Caption"
                                VerticalOptions="Start"
@@ -116,7 +116,7 @@
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="End"
                     
-                    BorderColor="Blue"></Button>
+                    BorderColor="#1ab6d9"></Button>
             </Grid>
         </Frame>
         <ScrollView Grid.Row="4"

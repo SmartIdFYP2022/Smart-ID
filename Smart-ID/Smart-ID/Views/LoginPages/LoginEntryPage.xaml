@@ -20,18 +20,18 @@
         <Label Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" x:Name="WelcomeLbl" Margin="0,300,0,0">
             <Label.FormattedText>
                 <FormattedString >
-                    <Span Text="Welcome to" TextColor="#0d1332" FontSize="Medium" FontAttributes="Bold"/>
+                    <Span Text="Welcome to" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
         <Label Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,340,0,0">
             <Label.FormattedText>
                 <FormattedString >
-                    <Span Text="Superior University's SmartPay " TextColor="#a9c6df" FontSize="Medium" FontAttributes="Bold"/>
+                    <Span Text="Superior University's SmartPay " TextColor="LightPink" FontSize="Medium" FontAttributes="Bold"/>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        <Button Text="LOG IN" TextColor="White" BackgroundColor="#0d1332"
+        <Button Text="LOG IN" TextColor="White" BackgroundColor="HotPink"
                 HeightRequest="45" Margin="30,20,30,0" CornerRadius="50" Grid.Row="1"
                 Command="{Binding btnLogin}"/>
     </Grid>
